@@ -1,18 +1,31 @@
 {
-  "name": "docker_heroku_ariang",
+  "name": "nodejs",
   "version": "1.0.0",
-  "description": "Node.js on Docker",
-  "author": "dugembot <dugembot@idfl.club>",
-  "license": "MIT",
+  "description": "A barebones Node.js app using Express on Heroku",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dugembot/mini.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "docker"
+  ],
+  "author": "dugembot <dugembot@idfl.club>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dugembot/mini/issues"
+  },
+  "homepage": "https://github.com/dugembot/mini#readme",
   "dependencies": {
-	  "heroku-ssl-redirect": "^0.1.1",
-	  "express": "^4.17.1",
-	  "http-proxy": "^1.18.1",
-	  "httpsrv": "^0.3.2",
-	  "request": "^2.88.1"
+    "express": "^4.17.1",
+    "heroku-ssl-redirect": "^0.1.1",
+    "http-proxy": "^1.18.1",
+    "httpsrv": "^0.3.2",
+    "request": "^2.88.2"
   }
 }
