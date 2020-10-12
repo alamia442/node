@@ -4,9 +4,6 @@
 FROM node:lts-alpine
 WORKDIR /app
 
-COPY package.json ./
-RUN npm install
-
 # Just echo so we can see, if everything is there :)
 RUN apk update \
 	&& apk add --no-cache --update bash wget unzip tar \
@@ -22,6 +19,7 @@ RUN apk update \
 	&& rm -rf AriaNg-* rclone-* aria2-*
 
 COPY . .
+RUN npm install
 
 ENV PORT=8080
 EXPOSE 8080
